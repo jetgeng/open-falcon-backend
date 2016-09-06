@@ -152,6 +152,7 @@
         "error": {}
       }
       ```
+
 ### `GET` `POST` /api/v1/portal/eventcases/close
 * !! this is deprecated now !!
 * `required login session`
@@ -286,6 +287,7 @@
       }
     }
     ```
+
 ### `GET` `POST` /api/v1/portal/eventcases/note
 * get one note
 * `required login session`
@@ -324,8 +326,11 @@
       }
     }
     ```
+
 ### `GET` `POST` /api/v2/portal/eventcases/get
+### `GET` `POST` /api/v3/portal/eventcases/get
 * `required login session`
+* v2: mapping get from boss api, v3: mapping get from sql cache
 * params:
   * `includeEvents` string (boolean)
     * ex. false, true
@@ -591,4 +596,3 @@
       }
     }
     ```
-
